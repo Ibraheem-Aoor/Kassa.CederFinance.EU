@@ -72,12 +72,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-include_once 'install_r.php';
+// include_once 'install_r.php';
 
 Route::middleware(['setData'])->group(function () {
-    Route::get('/', function () {
-        return view('welcome');
-    });
+    Route::redirect('/', 'login');
 
     Auth::routes();
 

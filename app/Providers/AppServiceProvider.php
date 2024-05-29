@@ -71,7 +71,7 @@ class AppServiceProvider extends ServiceProvider
         });
 
 
-        $asset_v = config('constants.asset_version', 1);
+        $asset_v = config('constants.asset_version', 1.1);
         View::share('asset_v', $asset_v);
 
         // Share the list of modules enabled in sidebar
